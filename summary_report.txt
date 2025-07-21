@@ -1,0 +1,234 @@
+PDF File | Page Number | Line with Keyword
+----------------------------------------------------
+DBMS(UT-5).pdf | Page 1 | DATABASE RECOVERY &TRANSACTION MANAGEMENTSYSTEM
+DBMS(UT-5).pdf | Page 1 | Transaction:
+DBMS(UT-5).pdf | Page 1 | as a transaction. Logical work can be inserting a new value in the current database,
+DBMS(UT-5).pdf | Page 1 | For example, adding a new member to the database of a team is a transaction.
+DBMS(UT-5).pdf | Page 1 | To complete a transaction, we have to follow some steps which make a transaction
+DBMS(UT-5).pdf | Page 1 | successful. For example, we withdraw the cash from ATM is an example of a transaction,
+DBMS(UT-5).pdf | Page 1 | Initialization if transaction
+DBMS(UT-5).pdf | Page 1 | Aborting the transaction
+DBMS(UT-5).pdf | Page 1 | So, in the same way, we have three steps in the DBMS for a transaction which are the
+DBMS(UT-5).pdf | Page 2 | PROPERTIES OF TRANSACTION(ACIDPROPERTIES):
+DBMS(UT-5).pdf | Page 2 |  This property states that all of the instructions with in a transaction
+DBMS(UT-5).pdf | Page 2 |  This property states that all transactions execution must be atomic
+DBMS(UT-5).pdf | Page 2 | Abort:If a transaction aborts, changes made to database are not visible.
+DBMS(UT-5).pdf | Page 2 | Commit:If a transaction commits, changes made are
+DBMS(UT-5).pdf | Page 2 |  Consider the following transaction T consisting of T1 and T2:
+DBMS(UT-5).pdf | Page 2 |  If the transaction fails after completion of
+DBMS(UT-5).pdf | Page 3 | state.Therefore,the transactionmustbe executed in entirety in order to
+DBMS(UT-5).pdf | Page 3 | performing any kind of transaction ensuring correctness of
+DBMS(UT-5).pdf | Page 3 |  If we execute a particular transaction in isolation(or)together with
+DBMS(UT-5).pdf | Page 3 | other transaction in multiprogramming environment ,the
+DBMS(UT-5).pdf | Page 3 | transaction should give same result in any case.
+DBMS(UT-5).pdf | Page 3 |  Each transaction, run by itself with no concurrent execution of
+DBMS(UT-5).pdf | Page 3 | other transactions, must preserve the consistency of the database.
+DBMS(UT-5).pdf | Page 3 | DBMSassumesthatitholdsforeachtransaction.
+DBMS(UT-5).pdf | Page 3 | The total amount before and after the transaction
+DBMS(UT-5).pdf | Page 4 |  When executing multiple transactions concurrently & trying to access
+DBMS(UT-5).pdf | Page 4 | one transaction can access the shared resource at the
+DBMS(UT-5).pdf | Page 4 | transaction.
+DBMS(UT-5).pdf | Page 4 |  This property ensures that multiple transactions can occur
+DBMS(UT-5).pdf | Page 4 |  This property states that once after the transaction is completed the
+DBMS(UT-5).pdf | Page 4 |  This property ensures that once the transaction has completed
+DBMS(UT-5).pdf | Page 4 | Transaction states:
+DBMS(UT-5).pdf | Page 4 | Every transaction undergoes several states in its execution. A
+DBMS(UT-5).pdf | Page 4 | transaction can be in any one of the following states:
+DBMS(UT-5).pdf | Page 4 | Transaction state diagram
+DBMS(UT-5).pdf | Page 5 | Active - This is the first state of transaction and here the transaction is
+DBMS(UT-5).pdf | Page 5 | we say transaction it will have set of small steps, and those steps
+DBMS(UT-5).pdf | Page 5 | the transaction is executed. But data is still not saved to the
+DBMS(UT-5).pdf | Page 5 | Committed - In this state, all the transactions are permanently saved to
+DBMS(UT-5).pdf | Page 5 | the database. This step is the last step of a transaction, if it
+DBMS(UT-5).pdf | Page 5 | Failed - If a transaction cannot proceed to the execution state because
+DBMS(UT-5).pdf | Page 5 | of the failure of the system or database, then the transaction is
+DBMS(UT-5).pdf | Page 5 | first step of transaction, then the transaction will fail to execute.
+DBMS(UT-5).pdf | Page 6 | transaction will start its execution from a fresh start or from a
+DBMS(UT-5).pdf | Page 6 | changes to the database as a result of any transaction after
+DBMS(UT-5).pdf | Page 6 | committing the transaction.
+DBMS(UT-5).pdf | Page 6 | In the shadow-copy scheme, a transaction that wants to update the
+DBMS(UT-5).pdf | Page 6 | If at any point the transaction has to be aborted, the system merely
+DBMS(UT-5).pdf | Page 6 | If the transaction completes, it is committed as follows.
+DBMS(UT-5).pdf | Page 7 | We now consider how the technique handles transaction and system failures.
+DBMS(UT-5).pdf | Page 7 | First, consider transaction failure. If the transaction fails at any time
+DBMS(UT-5).pdf | Page 7 | the database. Once the transaction has been committed, all the updates
+DBMS(UT-5).pdf | Page 7 | either all updates of the transaction are reflected, or none of the effects
+DBMS(UT-5).pdf | Page 7 | are reflected, regardless of transaction failure.
+DBMS(UT-5).pdf | Page 7 |  Partial transaction should be avoided for ensuring atomicity and durability.
+DBMS(UT-5).pdf | Page 7 |  Logs keep track of actions carried out by transactions which
+DBMS(UT-5).pdf | Page 7 |  When a transaction begins its execution it is recorded in the log as
+DBMS(UT-5).pdf | Page 8 |  When a transaction performs an operation it is recorded in log as follows
+DBMS(UT-5).pdf | Page 8 |  When a transaction finishes it’s execution, it is recorded as
+DBMS(UT-5).pdf | Page 8 | Executingasetoftransactionssimultaneouslyinapreemptiveandtimesharedme
+DBMS(UT-5).pdf | Page 8 | InDBMSconcurrentexecutionoftransactioncanbeimplementedwithinterleav
+DBMS(UT-5).pdf | Page 8 | TRANSACTION SCHEDULES:
+DBMS(UT-5).pdf | Page 8 |  It refers to the list of actions to be executed by transaction.
+DBMS(UT-5).pdf | Page 8 |  A schedule is a process of grouping the transactions into one and
+DBMS(UT-5).pdf | Page 8 | In the serial schedule the transactions are allowed to execute one
+DBMS(UT-5).pdf | Page 8 | A schedule is called serial schedule,if the transactions in the
+DBMS(UT-5).pdf | Page 8 | Concurrent schedule allows the transaction to be executed in inter leaved
+DBMS(UT-5).pdf | Page 9 | It is a schedule of transactions where each transaction is committed before
+DBMS(UT-5).pdf | Page 9 | terminating. The example is shown below where transactions T1 and T2
+DBMS(UT-5).pdf | Page 9 | terminates after committing the transactions.
+DBMS(UT-5).pdf | Page 9 | A transaction is said to be Serializable if it is equivalent to
+DBMS(UT-5).pdf | Page 10 |  They belong to different transactions.
+DBMS(UT-5).pdf | Page 10 | It refers to two instructions of two different transactions may want to
+DBMS(UT-5).pdf | Page 10 |  If two different transactions are both for read operation, then
+DBMS(UT-5).pdf | Page 10 |  If both transactions performing write operation then there will be
+DBMS(UT-5).pdf | Page 10 | in conflict so ordering the transaction can be done.
+DBMS(UT-5).pdf | Page 11 | Two schedules S1 and S2 over the same set of transactions—any
+DBMS(UT-5).pdf | Page 11 | transaction that appears in either S1 or S2 must also appear in the other
+DBMS(UT-5).pdf | Page 11 | For each data object A, the transaction (if any) that performs the final
+DBMS(UT-5).pdf | Page 11 | the transactions in both schedules performs the actions in similar
+DBMS(UT-5).pdf | Page 11 | case of any transaction failure due to system crash or any other reason.
+DBMS(UT-5).pdf | Page 12 | Basedonwhetherrecoveryoffailuretransactionschedulesareclassifiedas
+DBMS(UT-5).pdf | Page 12 |  If transaction T2 read the value updated by Transaction T1 followed by
+DBMS(UT-5).pdf | Page 12 | Schedule. If transaction1 failed before committing
+DBMS(UT-5).pdf | Page 13 | transaction are being executed concurrently
+DBMS(UT-5).pdf | Page 13 | execution of instruction of one transaction
+DBMS(UT-5).pdf | Page 13 | instruction of another transaction.
+DBMS(UT-5).pdf | Page 13 | Where one transaction locks the sharable
+DBMS(UT-5).pdf | Page 13 | release the lock to other transaction after
+DBMS(UT-5).pdf | Page 13 | transaction access, sharable resources.
+DBMS(UT-5).pdf | Page 13 | Transaction control commands supported with SQL:
+DBMS(UT-5).pdf | Page 14 | Transaction Control Language(TCL) commands are used to
+DBMS(UT-5).pdf | Page 14 | manage transactions in the database.
+DBMS(UT-5).pdf | Page 14 | COMMIT command is used to permanently save any transaction
+DBMS(UT-5).pdf | Page 14 | an ongoing transaction.
+DBMS(UT-5).pdf | Page 15 | SAVEPOINT command is used to temporarily save a transaction
+DBMS(UT-5).pdf | Page 15 | Isolation: Locking can ensure that transactions are executed
+DBMS(UT-5).pdf | Page 15 | in isolation from other transactions, preventing interference
+DBMS(UT-5).pdf | Page 16 | between transactions and reducing the risk of data
+DBMS(UT-5).pdf | Page 16 | transactions are waiting for each other to release resources,
+DBMS(UT-5).pdf | Page 16 | transactions from completing. Deadlocks can be difficult to
+DBMS(UT-5).pdf | Page 17 | complex transactional logic. This complexity can lead to
+DBMS(UT-5).pdf | Page 18 | database by transaction T2 while transaction T1is
+DBMS(UT-5).pdf | Page 18 | by transaction T2 while transaction T1 is using the
+DBMS(UT-5).pdf | Page 18 | table. if a transaction requires access to several
+DBMS(UT-5).pdf | Page 19 | transactions can access the same database as long
+DBMS(UT-5).pdf | Page 20 | transactions to access different rows of the same
+DBMS(UT-5).pdf | Page 20 | allows concurrent transactions to access the same
+DBMS(UT-5).pdf | Page 21 | transactions to obtain a lock on every object
+DBMS(UT-5).pdf | Page 21 | isperformed.Transactions may unlock the data
+DBMS(UT-5).pdf | Page 21 | Before initiating an execution, the transaction
+DBMS(UT-5).pdf | Page 21 | If all the locks are granted, the transaction executes
+DBMS(UT-5).pdf | Page 21 | over. If all the locks are not granted, the transaction
+DBMS(UT-5).pdf | Page 22 | transaction into three parts.
+DBMS(UT-5).pdf | Page 22 |  In the first part,when the transaction starts
+DBMS(UT-5).pdf | Page 22 |  The second part is where the transaction
+DBMS(UT-5).pdf | Page 22 | transaction releases its first lock, the third
+DBMS(UT-5).pdf | Page 22 |  In third phase, the transaction cannot
+DBMS(UT-5).pdf | Page 22 | In Growing Phase, a transaction obtains locks, but may
+DBMS(UT-5).pdf | Page 23 | In Shrinking Phase, a transaction may release locks, but
+DBMS(UT-5).pdf | Page 23 | transaction; and the second phase is shrinking,
+DBMS(UT-5).pdf | Page 23 | where the locks held by the transaction are being
+DBMS(UT-5).pdf | Page 23 | To claim an exclusive(write) lock, a transaction must
+DBMS(UT-5).pdf | Page 23 | If a transaction want to read any value it can refers
+DBMS(UT-5).pdf | Page 23 | If a transaction to write any particular value it can
+DBMS(UT-5).pdf | Page 24 | A shared lock acquire by multiple transaction at
+DBMS(UT-5).pdf | Page 24 | only one transaction at a time on any
+DBMS(UT-5).pdf | Page 24 | one transaction,then other transaction
+DBMS(UT-5).pdf | Page 24 | cannot read it until first transaction
+DBMS(UT-5).pdf | Page 24 | i.e.when the transaction starts executing,it seeks
+DBMS(UT-5).pdf | Page 24 | phase,the transaction continues to execute
+DBMS(UT-5).pdf | Page 24 | shared locks after a transaction is committed. This
+DBMS(UT-5).pdf | Page 25 | transaction commits.
+DBMS(UT-5).pdf | Page 25 | transactions.
+DBMS(UT-5).pdf | Page 25 |  It considers the order of commit among transaction
+DBMS(UT-5).pdf | Page 25 | the transaction starts.
+DBMS(UT-5).pdf | Page 25 | the execution of concurrent transactions.
+DBMS(UT-5).pdf | Page 25 | The older transaction is always given priority in this method. It
+DBMS(UT-5).pdf | Page 25 | transaction. This is the most commonly used concurrency
+DBMS(UT-5).pdf | Page 26 | the conflicting transactions when they will execute. Timestamp-
+DBMS(UT-5).pdf | Page 26 | Suppose there are there transactions T1, T2, and T3.
+DBMS(UT-5).pdf | Page 26 | Priority will be given to transaction T1, then transaction T2 and
+DBMS(UT-5).pdf | Page 26 | lastly Transaction T3.
+DBMS(UT-5).pdf | Page 26 | No waiting for the transaction, which eliminates the
+DBMS(UT-5).pdf | Page 26 | Starvation is possible if the same transaction is restarted and
+DBMS(UT-5).pdf | Page 26 | concurrency in transactions. In this protocol, the local copies of
+DBMS(UT-5).pdf | Page 26 | the transaction data are updated rather than the data itself,
+DBMS(UT-5).pdf | Page 26 | transaction.
+DBMS(UT-5).pdf | Page 27 | read by a transaction but the write operation or updates are
+DBMS(UT-5).pdf | Page 27 | no violation of serializability while applying the transaction
+DBMS(UT-5).pdf | Page 27 | and the transaction is rolled back.
+DBMS(UT-5).pdf | Page 33 | should not use for complex transactions which require multiple
+DBMS(UT-5).pdf | Page 35 | Transaction failure
+DBMS(UT-5).pdf | Page 35 | Transaction failure: A transaction needs to abort once it
+DBMS(UT-5).pdf | Page 35 | known as transaction failure wherever solely many
+DBMS(UT-5).pdf | Page 35 | transactions or processes are hurt. The reasons for
+DBMS(UT-5).pdf | Page 35 | transaction failure are:
+DBMS(UT-5).pdf | Page 35 | Logical errors: Where a transaction cannot complete as a
+DBMS(UT-5).pdf | Page 35 | terminates an energetic transaction as a result of the DBMS
+DBMS(UT-5).pdf | Page 35 | transaction.
+DBMS(UT-5).pdf | Page 37 | When a system crashes, it should have many transactions being
+DBMS(UT-5).pdf | Page 37 | Transactions are a product of numerous operations that are
+DBMS(UT-5).pdf | Page 37 | database, atomicity of transactions as an entire should be
+DBMS(UT-5).pdf | Page 37 | It ought to check the states of all the transactions that were
+DBMS(UT-5).pdf | Page 37 | A transaction could also be within the middle of some
+DBMS(UT-5).pdf | Page 37 | sure the atomicity of the transaction during this case.
+DBMS(UT-5).pdf | Page 37 | It ought to check whether or not the transaction is
+DBMS(UT-5).pdf | Page 37 | No transactions would be allowed to go away from the
+DBMS(UT-5).pdf | Page 38 | atomicity of a transaction:
+DBMS(UT-5).pdf | Page 38 | Maintaining the logs of every transaction, and writing them
+DBMS(UT-5).pdf | Page 38 | When a transaction enters the system and starts execution,
+DBMS(UT-5).pdf | Page 38 | Recovery with concurrent transactions (Automated Recovery):
+DBMS(UT-5).pdf | Page 38 | When over one transaction is being executed in parallel, the logs
+DBMS(UT-5).pdf | Page 39 | the transaction, such checkpoints are marked, and the
+DBMS(UT-5).pdf | Page 39 | transaction is executed then using the steps of the
+DBMS(UT-5).pdf | Page 39 | transaction, the log files will be created.
+DBMS(UT-5).pdf | Page 39 | When it reaches to the checkpoint, then the transaction
+DBMS(UT-5).pdf | Page 39 | transaction till next checkpoint and so on.
+DBMS(UT-5).pdf | Page 39 | DBMS was in the consistent state, and all transactions were
+DBMS(UT-5).pdf | Page 40 | The transaction is put into redo state if the recovery system
+DBMS(UT-5).pdf | Page 40 | transactions are removed and then redone before saving
+DBMS(UT-5).pdf | Page 40 | For example: In the log file, transaction T2 and T3 will have
+DBMS(UT-5).pdf | Page 40 | <Tn, Start> and <Tn, Commit>. The T1 transaction will have
+DBMS(UT-5).pdf | Page 40 | transaction is committed after the checkpoint is crossed.
+DBMS(UT-5).pdf | Page 40 | Hence it puts T1, T2 and T3 transaction into redo list.
+DBMS(UT-5).pdf | Page 40 | The transaction is put into undo state if the recovery
+DBMS(UT-5).pdf | Page 40 | log found. In the undo-list, all the transactions are undone,
+DBMS(UT-5).pdf | Page 40 | For example: Transaction T4 will have <Tn, Start>. So T4
+DBMS(UT-5).pdf | Page 40 | will be put into undo list since this transaction is not yet
+DBMS(UT-5).pdf | Page 41 | A deadlock is a condition where two or more transactions are
+DBMS(UT-5).pdf | Page 41 | In a database, when a transaction waits indefinitely to obtain a
+DBMS(UT-5).pdf | Page 41 | lock, then the DBMS should detect whether the transaction is
+DBMS(UT-5).pdf | Page 42 | method, a graph is created based on the transaction and
+DBMS(UT-5).pdf | Page 42 | every transaction which is waiting for some data held by
+DBMS(UT-5).pdf | Page 42 | operations of the transaction whether they can create a
+DBMS(UT-5).pdf | Page 42 | allowed that transaction to be executed.
+DBMS(UT-5).pdf | Page 43 | In this scheme, if a transaction requests for a resource which is
+DBMS(UT-5).pdf | Page 43 | already held with a conflicting lock by another transaction then
+DBMS(UT-5).pdf | Page 43 | the DBMS simply checks the timestamp of both transactions. It
+DBMS(UT-5).pdf | Page 43 | allows the older transaction to wait until the resource is available
+DBMS(UT-5).pdf | Page 43 | Let's assume there are two transactions Ti and Tj and let TS(T) is
+DBMS(UT-5).pdf | Page 43 | a timestamp of any transaction T. If T2 holds a lock by some
+DBMS(UT-5).pdf | Page 43 | other transaction and T1 is requesting for resources held by T2
+DBMS(UT-5).pdf | Page 43 | 1. Check if TS(Ti) < TS(Tj) - If Ti is the older transaction and Tj
+DBMS(UT-5).pdf | Page 43 | transaction is waiting for a resource which is locked by the
+DBMS(UT-5).pdf | Page 43 | younger transaction, then the older transaction is allowed
+DBMS(UT-5).pdf | Page 43 | 2. Check if TS(T) < TS(Tj) - If Ti is older transaction and has
+DBMS(UT-5).pdf | Page 43 | In wound wait scheme, if the older transaction requests for
+DBMS(UT-5).pdf | Page 43 | a resource which is held by the younger transaction, then
+DBMS(UT-5).pdf | Page 43 | older transaction forces younger one to kill the transaction
+DBMS(UT-5).pdf | Page 43 | younger transaction is restarted but with the same
+DBMS(UT-5).pdf | Page 43 | If the older transaction has held a resource which is
+DBMS(UT-5).pdf | Page 43 | requested by the Younger transaction, then the younger
+DBMS(UT-5).pdf | Page 43 | transaction is asked to wait until older releases it.
+DBMS(UT-5).pdf | Page 44 | as retail analytics data related to transactions, inventory, or
+DBMS(UT-5).pdf | Page 45 | 4.HTAP( Hybrid Transactional/Analytical Processing)
+DBMS(UT-5).pdf | Page 45 | HTAP (Hybrid Transactional/Analytical Processing) is a database
+DBMS(UT-5).pdf | Page 45 | architecture that combines both transactional and analytical
+DBMS(UT-5).pdf | Page 45 | organizations to perform real-time analytics on transactional data
+DBMS(UT-5).pdf | Page 45 | In a traditional OLTP (Online Transaction Processing) system, the
+DBMS(UT-5).pdf | Page 45 | focus is on processing transactions and ensuring data consistency
+DBMS(UT-5).pdf | Page 46 | both transactional processing and real-time analytics on the same
+DBMS(UT-5).pdf | Page 46 | storage to achieve high performance for both transactional and
+DBMS_UT-3_.pdf | Page 2 | 5. TCL – Transaction Control Language
+DBMS_UT-3_.pdf | Page 3 | 4. Transaction Control: SQL supports transaction processing, which
+DBMS_UT-3_.pdf | Page 3 | transaction that can be rolled back in case of failure.
+DBMS_UT-3_.pdf | Page 4 | Transactions are an important element of DBMS and to
+DBMS_UT-3_.pdf | Page 4 | control the transactions, TCL is used which has commands like
+DBMS_UT-3_.pdf | Page 4 | transaction.
+DBMS_UT-3_.pdf | Page 5 | savepoint: It goes back to the previous transaction without
+DBMS_UT-3_.pdf | Page 5 | going back to the entire transaction.
+DBMS_UT-3_.pdf | Page 60 | Preventing invalid transactions
